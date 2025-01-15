@@ -1,7 +1,7 @@
 //import express
 
 const express = require('express');
-const db = require('../src/config/db')
+//const db = require('../src/config/db')
 const app = express();
 
 app.get('/', (req, res) => {
