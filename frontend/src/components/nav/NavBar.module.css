@@ -1,0 +1,100 @@
+.navbar {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 2%;
+    border-radius: 50px;
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.15);  /* Semi-transparent white */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);  /* For Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+li {
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.name {
+    cursor: pointer;
+}
+
+/* Hide menu button by default */
+.menuButton {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 50%;
+    margin-right: 2%;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 80%;
+    }
+
+    .menuButton {
+        display: flex; /* Show menu button on mobile */
+        background: rgba(0, 0, 0, 0.8);  /* Semi-transparent black for glass effect */
+        backdrop-filter: blur(4px);
+    }
+
+    .navLinks {
+        display: none; /* Hide by default on mobile */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 30%;
+        padding: 1rem;
+        border-radius: 12px;
+        z-index: 10;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+        background: rgba(0, 0, 0, 0.9);  /* Semi-transparent black for glass effect */
+        backdrop-filter: blur(8px)
+
+    }
+
+    @media (max-width: 445px) {
+        .navLinks{
+            width: 50%;
+        }
+    }
+
+    a{
+        text-decoration-line: none;
+    }
+
+    .showMenu {
+        display: block; /* Show when menu is open */
+    }
+
+    .navLinks li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .contactButton {
+        margin-left: auto;
+    }
+}
