@@ -1,14 +1,7 @@
-
-//import React from 'react';
 import Home from "../pages/home/Home.jsx";
-// import About from "../pages/about/About.jsx";
-// import Contact from "../pages/contacts/Contact.jsx";
-// import Project from "../pages/projects/Project.jsx";
-// import Service from "../pages/services/Service.jsx";
 import RootLayout from "../layout/RootLayout.jsx";
-// import NotFound from "../pages/notfound/NotFound.jsx";
-import {Route, createBrowserRouter, createRoutesFromElements, RouterProvider} from "react-router";
 
+import {Route, createBrowserRouter, createRoutesFromElements, RouterProvider} from "react-router";
 
 function App() {
 

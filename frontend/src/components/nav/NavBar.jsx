@@ -6,10 +6,10 @@ function Navbar() {
     const navigate = useNavigate();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const contNav = () => {
-        navigate('/contact');
-        setIsMenuOpen(false); // Close menu when navigating
-    }
+    // const contNav = () => {
+    //     navigate('/contact');
+    //     setIsMenuOpen(false); // Close menu when navigating
+    // }
 
     const homeNav = () => {
         navigate('/');
@@ -35,28 +35,29 @@ function Navbar() {
 
             {/* Navigation links - visibility controlled by CSS */}
 
-            <p onClick={homeNav} className={styles.name}>PDOTCODE</p>
+            <p onClick={homeNav} className={styles.name}>SoloRM</p>
 
             <ul className={`${styles.navLinks} ${isMenuOpen ? styles.showMenu : ''}`}>
                 <NavLink to={'/'} onClick={() => setIsMenuOpen(false)}>
                     <li>Home</li>
-                </NavLink>
-                <NavLink to={'/project'} onClick={() => setIsMenuOpen(false)}>
-                    <li>Project</li>
-                </NavLink>
-                <NavLink to={'/service'} onClick={() => setIsMenuOpen(false)}>
-                    <li>Service</li>
                 </NavLink>
                 <NavLink to={'/about'} onClick={() => setIsMenuOpen(false)}>
                     <li>About</li>
                 </NavLink>
             </ul>
 
-            <button
-                onClick={contNav}
-                className={styles.contactButton}>
-                Contact
-            </button>
+            <div>
+                <button
+                    // onClick={contNav}
+                    className={styles.contactButton}>
+                    Login
+                </button>
+                <button
+                    // onClick={contNav}
+                    className={styles.contactButton}>
+                    Get Started
+                </button>
+            </div>
         </nav>
     );
 }

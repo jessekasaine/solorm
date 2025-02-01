@@ -1,7 +1,7 @@
 .navbar {
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 4px 2%;
     border-radius: 50px;
@@ -17,6 +17,12 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
 }
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
 
 li {
     display: inline-block;
@@ -27,6 +33,7 @@ li {
 
 .name {
     cursor: pointer;
+    color: #fff;
 }
 
 /* Hide menu button by default */
