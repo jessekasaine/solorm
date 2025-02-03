@@ -42,19 +42,28 @@ function Navbar() {
                     <li>Home</li>
                 </NavLink>
                 <NavLink to={'/about'} onClick={() => setIsMenuOpen(false)}>
+                    <li>Features</li>
+                </NavLink>
+                <NavLink to={'/about'} onClick={() => setIsMenuOpen(false)}>
+                    <li>Pricing</li>
+                </NavLink>
+                <NavLink to={'/about'} onClick={() => setIsMenuOpen(false)}>
+                    <li>Resources</li>
+                </NavLink>
+                <NavLink to={'/about'} onClick={() => setIsMenuOpen(false)}>
                     <li>About</li>
                 </NavLink>
             </ul>
 
-            <div>
+            <div className={styles.buttonContainer}>
                 <button
                     // onClick={contNav}
-                    className={styles.contactButton}>
+                    className={styles.loginButton}>
                     Login
                 </button>
                 <button
                     // onClick={contNav}
-                    className={styles.contactButton}>
+                    className={styles.getStartedButton}>
                     Get Started
                 </button>
             </div>
